@@ -13,5 +13,9 @@ int main()
     {
         printf("odd");
     }
+    if(n<0)
+    {
+        printf("invalid");
+    }
     return 0;
 }
