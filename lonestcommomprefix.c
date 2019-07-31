@@ -6,13 +6,13 @@ using namespace std;
 
 string LCP(string X, string Y)
 {
-	int i = 0, j = 0;
-	while (i < X.length() && j < Y.length())
+	int m = 0, n = 0;
+	while (m< X.length() && n < Y.length())
 	{
-		if (X[i] != Y[j])
+		if (X[m] != Y[n])
 			break;
 
-		i++, j++;
+		m++, n++;
 	}
 
 	return X.substr(0, i);
